@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: my-app:latest
+        image: my-app:latest   # <-- local Minikube image
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
 
